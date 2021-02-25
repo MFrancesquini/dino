@@ -7,7 +7,7 @@ public class CactusMove {
     private static Picture cactus;
 
     public static void cactus() throws InterruptedException {
-        cactus = new Picture(550,120,"resources/littlecactus.png");
+        cactus = new Picture(970,265,"resources/cactus-bg.png");
         cactus.draw();
         MoveCactusTowards.moveCactus();
     }

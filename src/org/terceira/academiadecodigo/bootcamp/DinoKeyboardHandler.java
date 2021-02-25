@@ -17,13 +17,19 @@ public class DinoKeyboardHandler implements KeyboardHandler {
     public void keyPressed(KeyboardEvent keyboardEvent) {
         switch (keyboardEvent.getKey()){
             case KeyboardEvent.KEY_UP:
-                pic.translate(0,-10);
-                break;
+
+                    pic.translate(0, -150);
+                    break;
         }
     }
 
     @Override
     public void keyReleased(KeyboardEvent keyboardEvent) {
+        switch (keyboardEvent.getKey()){
+            case KeyboardEvent.KEY_UP:
 
+                pic.translate(0, 150);
+                break;
+        }
     }
 }
