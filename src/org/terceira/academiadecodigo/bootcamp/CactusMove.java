@@ -16,12 +16,14 @@ public class CactusMove {
 
         public static void moveCactus() throws InterruptedException {
 
-            boolean keepInLoop = true;
 
-            while (keepInLoop){
+
+            while (true){
                 if (cactus.getX() < Game.rec.getX()){
                     cactus.delete();
-                    keepInLoop=false;
+                    cactus = new Picture(970,265,"resources/cactus-bg.png");
+                    cactus.draw();
+
                 }
                 cactus.translate(-3, 0);
                 Thread.sleep(30);
